@@ -1,9 +1,6 @@
 /* Designed By Emadcode.com => +966583418182 */
 /* Theme: Lamar */
 
-/* @import url("https://fonts.googleapis.com/css2?family=Mada:wght@400;700&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@500;700&display=swap"); */
-
 @font-face {
   font-family: "SwissraCondensed-Bold";
   src: url(https://res.cloudinary.com/dtt8dhoyw/raw/upload/v1678887257/clients_sites/vtkoo/swissracondensed-bold_jxdm49.ttf);
@@ -232,6 +229,9 @@ body.store-home:before {
 /* less margin for the middle banner */
 .section:nth-of-type(-n + 5):nth-of-type(n + 3) {
   padding: 0;
+}
+.section:nth-of-type(2) {
+  margin-bottom: 1rem;
 }
 @media only screen and (min-width: 492px) {
   .section:nth-of-type(-n + 5):nth-of-type(n + 3) {
