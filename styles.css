@@ -1,3 +1,273 @@
+/* Designed By Emadcode.com => +966583418182 */
+/* Theme: Lamar */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Mada:wght@400;700&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@500;700&display=swap"); */
 body {
-  --doneCSS: "done";
+  --clr-gold: #cc9d55;
+  --clr-b2: var(--color-main, #17192e);
+  --clr-b: #6248fd;
+  background-image: url(https://res.cloudinary.com/dtt8dhoyw/image/upload/v1678879956/clients_sites/vtkoo/7_tuhkxa.png);
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  background-position: center;
+  /* font-family: "Cairo"; */
 }
+
+/*                                  Header */
+.logo-wrapper .logo {
+  flex-shrink: 0;
+}
+.sub-nav-content .sub-nav-header {
+  background: url(https://res.cloudinary.com/dtt8dhoyw/image/upload/v1678781495/clients_sites/vtkoo/%D8%A3%D9%81%D8%AA%D8%A7%D8%B1-1_df4fhx.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sub-nav-header > img {
+  visibility: hidden;
+}
+/*                                  End Header */
+
+/*                                  sections */
+/* style gallery of 9 pics */
+.section:nth-of-type(-n + 3) > .container > .row::after,
+.section:nth-of-type(-n + 3) > .container > .row::before {
+  display: none;
+}
+.section:nth-of-type(-n + 3) > .container > .row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
+  justify-content: space-around;
+  gap: 0.5rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+}
+.section:nth-of-type(-n + 3) > .container > .row .category-featured a {
+  transition: all 0.4s;
+}
+.section:nth-of-type(-n + 3) > .container > .row .category-featured {
+  padding: unset;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  overflow: unset;
+}
+.section:nth-of-type(-n + 3) > .container > .row .category-featured:hover a {
+  transform: translateY(-20px);
+  transform: translateY(-1rem) rotate3d(1, 621, 9, -24deg);
+}
+.section:nth-of-type(-n + 3) > .container > .row .category-featured a::before {
+  display: none;
+}
+.section:nth-of-type(-n + 3) > .container > .row .category-featured a,
+.section:nth-of-type(-n + 3) > .container > .row .category-featured a img {
+  border-radius: 0.3rem;
+  position: relative !important;
+}
+.section:nth-of-type(-n + 3) > .container > .row > div {
+  padding-right: 0.2rem;
+  padding-left: 0.2rem;
+  width: auto !important;
+}
+@media only screen and (min-width: 492px) {
+  .section:nth-of-type(-n + 3) > .container > .row {
+    gap: 1.5rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .section:nth-of-type(-n + 3) > .container > .row {
+    gap: 3vw;
+  }
+  .section:nth-of-type(-n + 3) > .container > .row .category-featured a,
+  .section:nth-of-type(-n + 3) > .container > .row .category-featured a img {
+    border-radius: 0.6rem;
+  }
+}
+/* END style gallery of 9 pics */
+/* gradient title */
+section.text-center:not([class*="product"]):not([class="section"])
+  .section-header
+  .section--title {
+  font-size: 2rem;
+  background-color: var(--clr-b2);
+  background-image: linear-gradient(
+    90deg,
+    var(--clr-b2),
+    var(--clr-b2) 40%,
+    var(--clr-gold) 60%,
+    var(--clr-b2)
+  );
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  background-repeat: repeat;
+  background-size: 100%;
+}
+/* make banners full width */
+section.section[data-type="banner"] > .container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+section.u-white,
+.product-footer .product-add {
+  background-color: transparent;
+}
+.section-products .container {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+/* remv bg for prods */
+.product-box .product {
+  background-color: transparent;
+}
+/*                                   End  sections */
+
+/*                                   Clients review */
+.testimonials-item {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+/* change avarar in rating sec */
+.testimonials-item img[src*="avatar_male"] {
+  display: none !important;
+}
+.testimonials-item img[src*="avatar"] + div {
+  position: relative;
+  left: -40px;
+}
+.testimonials-item img[src*="avatar"] + div:before {
+  content: "";
+  position: absolute;
+  right: -60px;
+  top: -10px;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.testimonials-item img[src*="avatar_male"] + div:before {
+  background-image: url(https://res.cloudinary.com/dtt8dhoyw/image/upload/v1678779457/clients_sites/vtkoo/avatar-male_mm6kme.svg);
+}
+.testimonials-item img[src*="avatar_female"] + div:before {
+  background-image: url(https://res.cloudinary.com/dtt8dhoyw/image/upload/v1678779457/clients_sites/vtkoo/avatar-female_te4peu.svg);
+}
+/*                                   End  Clients review */
+
+/* →                                 Features */
+.feature-item .feature-item__content {
+  background-color: transparent;
+  box-shadow: none;
+}
+.feature-item .feature-item__icon {
+  background-color: transparent;
+}
+.feature-item__icon h3,
+.feature-item p {
+  color: var(--clr-b2);
+}
+/* 3d icons */
+.feature-item .feature-item__icon > i::before {
+  content: "";
+  width: 70px;
+  height: 70px;
+  background-image: url(https://res.cloudinary.com/dtt8dhoyw/image/upload/v1678780012/clients_sites/vtkoo/rocket-dynamic-color_sswbfk.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: inline-block;
+  animation: floting1 ease-in-out 7s infinite;
+}
+.feature-item:nth-of-type(2) .feature-item__icon > i::before {
+  background-image: url(https://res.cloudinary.com/dtt8dhoyw/image/upload/v1678780233/clients_sites/vtkoo/gift-dynamic-color_lutaly.png);
+}
+.feature-item:nth-of-type(3) .feature-item__icon > i::before {
+  background-image: url(https://res.cloudinary.com/dtt8dhoyw/image/upload/v1678780473/clients_sites/vtkoo/chat-bubble-dynamic-color_wloxjo.png);
+}
+@keyframes floting1 {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .feature-item .feature-item__icon > i::before {
+    width: 120px;
+    height: 120px;
+  }
+}
+/* →                                 End Features */
+
+/* →                                 Footer */
+.footer-header {
+  background-color: transparent;
+}
+.footer-main {
+  background: url(https://res.cloudinary.com/dtt8dhoyw/image/upload/v1678695553/clients_sites/vtkoo/JtZAoxd_t9w8pm.png);
+  background: url(https://res.cloudinary.com/dtt8dhoyw/image/upload/v1678695707/clients_sites/vtkoo/leyXWO4_kxt4oh.png);
+  background-size: cover;
+  background-position: center;
+  background-color: var(--clr-b2);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+.footer-sub {
+  background-color: var(--clr-b2);
+}
+.footer-main *:not(i) {
+  color: var(--clr-gold);
+}
+/* make logo in footer */
+.footer-main:before {
+  content: "";
+  background: url(https://cdn.salla.sa/ODZRm/lZQd5mfMBJNvjwxCC5l4PNZ9BYHxcY4i1GfMx0Or.png);
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+@media only screen and (min-width: 768px) {
+  .footer-main:before {
+    display: block;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer-item:first-of-type .store-contact:first-of-type {
+    justify-content: center;
+    display: flex;
+  }
+  .store-contact a {
+    direction: unset !important;
+  }
+  .footer-main {
+    text-align: center;
+  }
+}
+/* change salla phrase to store name */
+.footer-sub .col-xs-12 p {
+  font-size: 0;
+}
+.footer-sub .col-xs-12 p:before {
+  font-size: 0.75rem;
+  content: "vtkoo جميع الحقوق محفوظة";
+  color: var(--clr-gold);
+}
+/* →                                  End Footer */
+
+/* floating whats, hide on nav-open */
+body.nav-open #whatsapp_chat_widget {
+  display: none;
+}
+
+
