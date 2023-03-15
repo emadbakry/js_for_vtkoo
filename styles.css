@@ -31,11 +31,11 @@ body {
 
 /*                                  sections */
 /* style gallery of 9 pics */
-.section:nth-of-type(-n + 3) > .container > .row::after,
-.section:nth-of-type(-n + 3) > .container > .row::before {
+.section:nth-of-type(-n + 5):nth-of-type(n + 3) > .container > .row::after,
+.section:nth-of-type(-n + 5):nth-of-type(n + 3) > .container > .row::before {
   display: none;
 }
-.section:nth-of-type(-n + 3) > .container > .row {
+.section:nth-of-type(-n + 5):nth-of-type(n + 3) > .container > .row {
   display: grid;
   grid-template-columns: repeat(3, minmax(50px, 1fr));
   justify-content: space-around;
@@ -43,43 +43,76 @@ body {
   padding-left: 0.7rem;
   padding-right: 0.7rem;
 }
-.section:nth-of-type(-n + 3) > .container > .row .category-featured a {
+.section:nth-of-type(-n + 5):nth-of-type(n + 3)
+  > .container
+  > .row
+  .category-featured
+  a {
   transition: all 0.4s;
 }
-.section:nth-of-type(-n + 3) > .container > .row .category-featured {
+.section:nth-of-type(-n + 5):nth-of-type(n + 3)
+  > .container
+  > .row
+  .category-featured {
   padding: unset;
   transform-style: preserve-3d;
   perspective: 500px;
   overflow: unset;
 }
-.section:nth-of-type(-n + 3) > .container > .row .category-featured:hover a {
+.section:nth-of-type(-n + 5):nth-of-type(n + 3)
+  > .container
+  > .row
+  .category-featured:hover
+  a {
   transform: translateY(-20px);
   transform: translateY(-1rem) rotate3d(1, 621, 9, -24deg);
 }
-.section:nth-of-type(-n + 3) > .container > .row .category-featured a::before {
+.section:nth-of-type(-n + 5):nth-of-type(n + 3)
+  > .container
+  > .row
+  .category-featured
+  a::before {
   display: none;
 }
-.section:nth-of-type(-n + 3) > .container > .row .category-featured a,
-.section:nth-of-type(-n + 3) > .container > .row .category-featured a img {
+.section:nth-of-type(-n + 5):nth-of-type(n + 3)
+  > .container
+  > .row
+  .category-featured
+  a,
+.section:nth-of-type(-n + 5):nth-of-type(n + 3)
+  > .container
+  > .row
+  .category-featured
+  a
+  img {
   border-radius: 0.3rem;
   position: relative !important;
 }
-.section:nth-of-type(-n + 3) > .container > .row > div {
+.section:nth-of-type(-n + 5):nth-of-type(n + 3) > .container > .row > div {
   padding-right: 0.2rem;
   padding-left: 0.2rem;
   width: auto !important;
 }
 @media only screen and (min-width: 492px) {
-  .section:nth-of-type(-n + 3) > .container > .row {
+  .section:nth-of-type(-n + 5):nth-of-type(n + 3) > .container > .row {
     gap: 1.5rem;
   }
 }
 @media only screen and (min-width: 768px) {
-  .section:nth-of-type(-n + 3) > .container > .row {
+  .section:nth-of-type(-n + 5):nth-of-type(n + 3) > .container > .row {
     gap: 3vw;
   }
-  .section:nth-of-type(-n + 3) > .container > .row .category-featured a,
-  .section:nth-of-type(-n + 3) > .container > .row .category-featured a img {
+  .section:nth-of-type(-n + 5):nth-of-type(n + 3)
+    > .container
+    > .row
+    .category-featured
+    a,
+  .section:nth-of-type(-n + 5):nth-of-type(n + 3)
+    > .container
+    > .row
+    .category-featured
+    a
+    img {
     border-radius: 0.6rem;
   }
 }
@@ -269,5 +302,3 @@ section.u-white,
 body.nav-open #whatsapp_chat_widget {
   display: none;
 }
-
-
