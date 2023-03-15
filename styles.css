@@ -116,6 +116,10 @@ body {
     border-radius: 0.6rem;
   }
 }
+/* make second banner (title of gallery) unclickable */
+.section:nth-of-type(2) {
+  pointer-events: none;
+}
 /* END style gallery of 9 pics */
 /* gradient title */
 section.text-center:not([class*="product"]):not([class="section"])
