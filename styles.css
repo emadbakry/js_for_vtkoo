@@ -120,6 +120,10 @@ body {
 .section:nth-of-type(2) {
   pointer-events: none;
 }
+/* less margin for the middle banner */
+.section:nth-of-type(4) {
+  padding: 0;
+}
 /* END style gallery of 9 pics */
 /* gradient title */
 section.text-center:not([class*="product"]):not([class="section"])
