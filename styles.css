@@ -19,6 +19,9 @@ body {
 *:not(i) {
   font-family: "SwissraCondensed-Bold";
 }
+input {
+  font-family: dinnextltarabic-regular !important;
+}
 .section--title {
   font-family: "SwissraCondensed-Bold";
 }
@@ -418,7 +421,7 @@ section.u-white,
   content: "vtkoo جميع الحقوق محفوظة";
   color: var(--clr-gold);
 }
-/* →                                   End Footer */
+/* →                                  End Footer */
 
 /* floating whats, hide on nav-open */
 body.nav-open #whatsapp_chat_widget {
